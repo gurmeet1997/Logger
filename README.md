@@ -18,7 +18,7 @@ Above requirements are the minimal ones
   The logs collected from the different log inputs are indexed into elasticsearch Cluster and as said earlier elasticsearch accpets document as JSON format only.Opendistro provides you with funtionality to index a doc into the elasticsearch cluster using REST API calls.
  
 We are Using OpenDistro for elastic search for Processing logs of different microservices to make them available at a central place where all the logs can be visulaized with kibana.Here two microsevices order-service and payment-service has been created in Spring boot. The logs for these two application can be collected at any destination of user choice. For simplicity i have collected them to a local storage.We have integrated the java services with Eureka Cloud for visulaization and also these services are communicating with each other with the API gatway. 
-As a part of the project we need to test out model for Ruby services also. So i have created  a sample Ruby Service which is running with the java services and logs of this ruby service is also being analyzed.
+
 
 The Main benefits of using opendistro is it's on premise availabiltiy of Security,Alerting and Performance Analysis.The best way to configure opendistro in the production Environement is using docker.It is also quite well documented here [documentation](https://opendistro.github.io/for-elasticsearch-docs/docs/install/docker/#start-a-cluster).
 
